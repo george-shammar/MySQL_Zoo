@@ -11,3 +11,8 @@ WHERE name IN ('Sweden', 'Norway', 'Denmark');
 SELECT name, area 
 FROM world
 WHERE area BETWEEN 200000 AND 250000;
+
+-- select from world
+
+SELECT name, continent, population 
+FROM world;
