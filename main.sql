@@ -28,3 +28,7 @@ WHERE population >= 200000000;
 SELECT name, population/1000000
 FROM world
 WHERE continent = 'South America';
+
+SELECT name, population
+FROM world
+WHERE name = 'France' OR name = 'Germany' OR name = 'Italy';
