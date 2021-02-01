@@ -170,3 +170,10 @@ SELECT name,
            
 FROM world
 WHERE continent = 'Europe';
+
+SELECT name
+FROM world
+WHERE gdp >
+ALL(SELECT gdp
+FROM world
+WHERE continent = 'Europe' AND GDP > 0);
