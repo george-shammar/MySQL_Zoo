@@ -60,3 +60,8 @@ WHERE LEN(name) = LEN(capital);
 SELECT name, capital
 FROM world
 WHERE LEFT(name,1) = LEFT(capital, 1) AND name<>capital;
+
+SELECT name
+   FROM world
+WHERE name LIKE '%a%' AND name LIKE '%e%' AND name LIKE '%i%' AND name LIKE '%o%' AND name LIKE '%u%'
+  AND name NOT LIKE '% %';
