@@ -48,3 +48,7 @@ WHERE area > 3000000 AND population < 250000000 OR area < 3000000 AND population
 SELECT name, ROUND(population/1000000, 2), ROUND(GDP/1000000000, 2)
 FROM world
 WHERE continent = 'South America';
+
+SELECT name, ROUND(GDP/population, 0)
+FROM world
+WHERE GDP >= 1000000000000;
