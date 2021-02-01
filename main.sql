@@ -94,3 +94,7 @@ SELECT * FROM nobel
                   'Woodrow Wilson',
                   'Jimmy Carter',
                     'Barack Obama');
+
+SELECT winner
+FROM nobel
+WHERE winner LIKE ('John%');
