@@ -152,3 +152,13 @@ SELECT name, continent
 FROM world
 WHERE continent = 'South America' OR continent = 'Oceania'
 ORDER BY name;
+
+SELECT name, population
+FROM world
+WHERE population > 
+(SELECT population
+FROM world
+WHERE name = 'Canada') AND population < 
+(SELECT population
+FROM world
+WHERE name = 'Poland');
