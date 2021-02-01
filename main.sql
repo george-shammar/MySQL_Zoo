@@ -56,3 +56,7 @@ WHERE GDP >= 1000000000000;
 SELECT name, capital
 FROM world
 WHERE LEN(name) = LEN(capital);
+
+SELECT name, capital
+FROM world
+WHERE LEFT(name,1) = LEFT(capital, 1) AND name<>capital;
