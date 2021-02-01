@@ -147,3 +147,8 @@ WHERE continent = 'Europe' AND GDP/population >
 (SELECT GDP/population 
 FROM world
 WHERE name = 'United Kingdom');
+
+SELECT name, continent
+FROM world
+WHERE continent = 'South America' OR continent = 'Oceania'
+ORDER BY name;
