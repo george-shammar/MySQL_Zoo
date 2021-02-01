@@ -133,3 +133,10 @@ WHEN subject IN ('Physics', 'Chemistry') THEN 1
 ELSE 0
 END,
 subject, winner;
+
+-- nested queries
+
+SELECT name FROM world
+  WHERE population >
+     (SELECT population FROM world
+      WHERE name='Russia');
