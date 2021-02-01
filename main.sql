@@ -52,3 +52,7 @@ WHERE continent = 'South America';
 SELECT name, ROUND(GDP/population, 0)
 FROM world
 WHERE GDP >= 1000000000000;
+
+SELECT name, capital
+FROM world
+WHERE LEN(name) = LEN(capital);
