@@ -32,3 +32,7 @@ WHERE continent = 'South America';
 SELECT name, population
 FROM world
 WHERE name = 'France' OR name = 'Germany' OR name = 'Italy';
+
+SELECT name
+FROM world
+WHERE name LIKE 'United%';
