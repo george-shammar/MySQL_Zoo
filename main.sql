@@ -291,3 +291,10 @@ WHERE title = 'Casablanca';
 SELECT name
 FROM actor JOIN casting ON (actor.id = casting.actorid)
 WHERE movieid=27;
+
+SELECT name
+FROM actor JOIN casting ON (actor.id = casting.actorid)
+WHERE movieid=
+(SELECT id 
+FROM movie 
+WHERE title = 'Alien');
