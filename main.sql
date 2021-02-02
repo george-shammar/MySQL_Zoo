@@ -221,3 +221,7 @@ WHERE teamid = 'GER';
 SELECT id,stadium,team1,team2
 FROM game
 WHERE id = 1012;
+
+SELECT player,teamid, stadium, mdate
+FROM goal JOIN game ON (goal.matchid = game.id)
+WHERE teamid = 'GER';
