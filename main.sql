@@ -313,6 +313,11 @@ WHERE ord != 1 AND actorid =
 FROM actor
 WHERE name = 'Harrison Ford');
 
+SELECT title, name
+FROM movie JOIN casting ON (movie.id = casting.movieid)
+JOIN actor ON (casting.actorid = actor.id)
+WHERE yr = 1962 AND ord = 1;
+
 SELECT yr,COUNT(title) FROM
   movie JOIN casting ON movie.id=movieid
         JOIN actor   ON actorid=actor.id
