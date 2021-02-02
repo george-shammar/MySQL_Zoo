@@ -75,7 +75,7 @@ SELECT yr, subject, winner
  SELECT winner
   FROM nobel
  WHERE yr = 1962
-   AND subject = 'Literature'
+   AND subject = 'Literature';
 
 SELECT yr, subject
 FROM nobel
