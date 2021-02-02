@@ -70,7 +70,7 @@ WHERE name LIKE '%a%' AND name LIKE '%e%' AND name LIKE '%i%' AND name LIKE '%o%
 
 SELECT yr, subject, winner
   FROM nobel
- WHERE yr = 1950
+ WHERE yr = 1950;
 
  SELECT winner
   FROM nobel
