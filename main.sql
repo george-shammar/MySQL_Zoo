@@ -305,3 +305,10 @@ WHERE actorid =
 (SELECT id
 FROM actor
 WHERE name = 'Harrison Ford');
+
+SELECT title 
+FROM movie JOIN casting ON (movie.id = casting.movieid)
+WHERE ord != 1 AND actorid =
+(SELECT id
+FROM actor
+WHERE name = 'Harrison Ford');
