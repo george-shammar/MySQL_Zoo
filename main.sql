@@ -198,3 +198,7 @@ WHERE area >=1000000;
 SELECT SUM(population)
 FROM world
 WHERE name = 'Estonia' OR name = 'Latvia' OR name = 'Lithuania';
+
+SELECT continent, COUNT(name)
+FROM world
+GROUP BY continent;
