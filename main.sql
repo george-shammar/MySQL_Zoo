@@ -255,3 +255,8 @@ SELECT stadium, COUNT(*)
 FROM game JOIN goal ON (game.id = goal.matchid)
 GROUP BY stadium
 ORDER BY stadium;
+
+SELECT matchid, mdate, COUNT(Player)
+FROM game JOIN goal ON matchid = id 
+WHERE (team1 = 'POL' OR team2 = 'POL')
+GROUP BY matchid, mdate;
