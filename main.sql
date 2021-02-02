@@ -212,3 +212,8 @@ SELECT continent
 FROM world
 GROUP BY continent
 HAVING SUM(population) >= 100000000;
+
+-- join
+SELECT matchid, player
+FROM goal 
+WHERE teamid = 'GER';
