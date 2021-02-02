@@ -229,3 +229,7 @@ WHERE teamid = 'GER';
 SELECT team1, team2, player
 FROM game JOIN goal ON (game.id = goal.matchid)
 WHERE player LIKE 'Mario%';
+
+SELECT player, teamid, coach, gtime
+FROM goal JOIN eteam ON (goal.teamid = eteam.id)
+WHERE gtime<=10;
