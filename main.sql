@@ -225,3 +225,7 @@ WHERE id = 1012;
 SELECT player,teamid, stadium, mdate
 FROM goal JOIN game ON (goal.matchid = game.id)
 WHERE teamid = 'GER';
+
+SELECT team1, team2, player
+FROM game JOIN goal ON (game.id = goal.matchid)
+WHERE player LIKE 'Mario%';
