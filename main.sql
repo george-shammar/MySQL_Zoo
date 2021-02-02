@@ -260,3 +260,8 @@ SELECT matchid, mdate, COUNT(Player)
 FROM game JOIN goal ON matchid = id 
 WHERE (team1 = 'POL' OR team2 = 'POL')
 GROUP BY matchid, mdate;
+
+SELECT matchid, mdate, COUNT(player)
+FROM game JOIN goal ON (game.id = goal.matchid)
+WHERE teamid = 'GER'
+GROUP BY matchid, mdate;
