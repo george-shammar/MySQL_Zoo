@@ -287,3 +287,7 @@ WHERE name = 'Glenn Close';
 SELECT id 
 FROM movie
 WHERE title = 'Casablanca';
+
+SELECT name
+FROM actor JOIN casting ON (actor.id = casting.actorid)
+WHERE movieid=27;
