@@ -243,8 +243,8 @@ FROM goal JOIN game ON (goal.matchid = game.id)
 WHERE stadium = 'National Stadium, Warsaw';
 
 SELECT DISTINCT(player)
-  FROM goal JOIN game ON (goal.matchid = game.id) 
-    WHERE (team1 = 'GER' OR team2 = 'GER') AND teamid != 'GER';
+FROM goal JOIN game ON (goal.matchid = game.id) 
+WHERE (team1 = 'GER' OR team2 = 'GER') AND teamid != 'GER';
 
 SELECT teamname, COUNT(*)
 FROM eteam JOIN goal ON id=teamid
