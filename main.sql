@@ -265,3 +265,8 @@ SELECT matchid, mdate, COUNT(player)
 FROM game JOIN goal ON (game.id = goal.matchid)
 WHERE teamid = 'GER'
 GROUP BY matchid, mdate;
+
+-- more join
+SELECT id, title
+ FROM movie
+ WHERE yr=1962;
