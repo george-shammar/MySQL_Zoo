@@ -190,3 +190,7 @@ FROM world;
 SELECT SUM(GDP)
 FROM world
 WHERE continent = 'Africa';
+
+SELECT COUNT(name)
+FROM world
+WHERE area >=1000000;
