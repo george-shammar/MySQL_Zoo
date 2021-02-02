@@ -202,3 +202,8 @@ WHERE name = 'Estonia' OR name = 'Latvia' OR name = 'Lithuania';
 SELECT continent, COUNT(name)
 FROM world
 GROUP BY continent;
+
+SELECT continent, COUNT(name)
+FROM world
+WHERE population >= 10000000
+GROUP BY continent;
