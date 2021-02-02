@@ -324,3 +324,10 @@ SELECT yr,COUNT(title) FROM
 WHERE name='Rock Hudson'
 GROUP BY yr
 HAVING COUNT(title) > 1
+
+SELECT name
+FROM actor JOIN casting ON (actor.id = casting.actorid)
+WHERE ord = 1 
+GROUP BY name
+HAVING COUNT(ord) >= 15
+ORDER BY name;
