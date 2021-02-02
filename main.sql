@@ -186,3 +186,7 @@ FROM world;
 
 SELECT DISTINCT(continent)
 FROM world;
+
+SELECT SUM(GDP)
+FROM world
+WHERE continent = 'Africa';
