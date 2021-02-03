@@ -381,3 +381,5 @@ END
 FROM teacher;
 
 -- self join
+SELECT COUNT(name)
+FROM stops;
