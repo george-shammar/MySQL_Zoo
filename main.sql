@@ -181,7 +181,6 @@ WHERE continent = 'Europe' AND GDP > 0);
 
 
 -- sum and count
-
 SELECT SUM(population)
 FROM world;
 
