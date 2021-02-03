@@ -332,3 +332,5 @@ WHERE ord = 1
 GROUP BY name
 HAVING COUNT(ord) >= 15
 ORDER BY name;
+
+-- NULL
