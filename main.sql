@@ -362,3 +362,11 @@ FROM teacher;
 SELECT dept.name, COUNT(teacher.name) 
 FROM teacher RIGHT JOIN dept ON (teacher.dept = dept.id)
 GROUP BY dept.name;
+
+SELECT teacher.name,
+CASE
+WHEN teacher.dept = 1 THEN 'Sci'
+WHEN teacher.dept = 2 THEN 'Sci'
+ELSE 'Art'
+END
+FROM teacher;
