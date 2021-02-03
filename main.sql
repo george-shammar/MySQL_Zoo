@@ -320,7 +320,7 @@ JOIN actor ON (casting.actorid = actor.id)
 WHERE yr = 1962 AND ord = 1;
 
 SELECT yr,COUNT(title) FROM
-  movie JOIN casting ON movie.id=movieid
+movie JOIN casting ON movie.id=movieid
         JOIN actor   ON actorid=actor.id
 WHERE name='Rock Hudson'
 GROUP BY yr
