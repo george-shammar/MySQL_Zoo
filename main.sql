@@ -370,3 +370,12 @@ WHEN teacher.dept = 2 THEN 'Sci'
 ELSE 'Art'
 END
 FROM teacher;
+
+SELECT teacher.name,
+CASE
+WHEN teacher.dept = 1 THEN 'Sci'
+WHEN teacher.dept =2 THEN 'Sci'
+WHEN teacher.dept = 3 THEN 'Art'
+ELSE 'None'
+END
+FROM teacher;
