@@ -349,3 +349,6 @@ SELECT teacher.name, dept.name
 SELECT teacher.name, dept.name
  FROM teacher RIGHT JOIN dept
            ON (teacher.dept=dept.id)
+
+SELECT teacher.name, COALESCE(mobile, '07986 444 2266')
+FROM teacher;
