@@ -383,3 +383,7 @@ FROM teacher;
 -- self join
 SELECT COUNT(name)
 FROM stops;
+
+SELECT id
+FROM stops
+WHERE name = 'Craiglockhart';
