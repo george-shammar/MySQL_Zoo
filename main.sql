@@ -66,8 +66,8 @@ AND name NOT LIKE '% %';
 
 --   nobel table
 SELECT yr, subject, winner
-  FROM nobel
- WHERE yr = 1950;
+FROM nobel
+WHERE yr = 1950;
 
  SELECT winner
  FROM nobel
