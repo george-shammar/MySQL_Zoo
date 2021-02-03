@@ -334,3 +334,6 @@ HAVING COUNT(ord) >= 15
 ORDER BY name;
 
 -- NULL
+SELECT name 
+FROM teacher
+WHERE dept IS NULL;
