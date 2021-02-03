@@ -379,3 +379,5 @@ WHEN teacher.dept = 3 THEN 'Art'
 ELSE 'None'
 END
 FROM teacher;
+
+-- self join
